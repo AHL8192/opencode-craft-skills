@@ -1,0 +1,902 @@
+# EffectCraft command index — 0.13.0
+
+Snapshot from `effectcraft-cli commands --json` (run `scripts/dump-commands.sh --update-skill`
+to refresh). One line per command: id — label — shortcut. Parameter docs and JSON Schemas
+are intentionally omitted; get them live with `describe_command` / `exec --list --schemas`.
+731 commands in 55 namespaces.
+
+## file (61)
+
+- `file.applyInterpretation` — Apply Interpretation — *Cmd+Alt+V*
+- `file.autoSave` — Auto-Save Now
+- `file.clearRecent` — Clear Recent Projects
+- `file.clearRecentFootage` — Clear Recent Footage
+- `file.close` — Close — *Cmd+W*
+- `file.closeProject` — Close Project
+- `file.collectFiles` — Collect Files...
+- `file.consolidateFootage` — Consolidate All Footage
+- `file.createProxy` — Create Proxy
+- `file.cycleBitDepth` — Cycle Project Bit Depth
+- `file.executeFile` — Execute File
+- `file.exportLottie` — Lottie JSON...
+- `file.exportTimeline` — Adobe Premiere Pro Project...
+- `file.findMissing` — Find Missing
+- `file.import` — File... — *Cmd+I*
+- `file.importLottie` — Lottie...
+- `file.importMultiple` — Multiple Files... — *Cmd+Alt+I*
+- `file.importPlaceholder` — Placeholder...
+- `file.importProject` — EffectCraft Project...
+- `file.importRecent` — Import Recent Footage
+- `file.importSolid` — Solid...
+- `file.importTimeline` — Adobe Premiere Pro Project...
+- `file.importVanishingPoint` — Vanishing Point (.vpe)...
+- `file.incrementAndSave` — Increment and Save — *Cmd+Alt+Shift+S*
+- `file.installScript` — Install Script File...
+- `file.installScriptUIPanel` — Install ScriptUI Panel...
+- `file.interpretFootage` — Main... — *Cmd+Alt+G*
+- `file.interpretProxy` — Proxy...
+- `file.newCompFromSelection` — New Comp from Selection... — *Cmd+Alt+\*
+- `file.newFromTemplate` — New Project from Template...
+- `file.newProject` — New Project — *Cmd+Alt+N*
+- `file.open` — Open Project... — *Cmd+O*
+- `file.openDemoProject` — Open Demo Project
+- `file.openRecent` — Open Recent — *Cmd+Alt+Shift+P*
+- `file.projectSettings` — Project Settings... — *Cmd+Alt+Shift+K*
+- `file.recoveryInfo` — Auto-Save Status
+- `file.reduceProject` — Reduce Project
+- `file.relinkFootage` — Relink Missing Footage...
+- `file.reloadFootage` — Reload Footage — *Cmd+Alt+L*
+- `file.rememberInterpretation` — Remember Interpretation
+- `file.removeUnusedFootage` — Remove Unused Footage
+- `file.replaceFootage` — File... — *Cmd+H*
+- `file.replaceWithLayeredComp` — With Layered Comp
+- `file.replaceWithPlaceholder` — Placeholder...
+- `file.replaceWithPrecomp` — Replace with Precomposition
+- `file.replaceWithSolid` — Solid...
+- `file.revealInFinder` — Reveal in Finder
+- `file.revert` — Revert
+- `file.runScript` — Run Script File...
+- `file.save` — Save — *Cmd+S*
+- `file.saveAs` — Save As... — *Cmd+Shift+S*
+- `file.saveCopy` — Save a Copy...
+- `file.saveCopyAsXml` — Save a Copy As XML...
+- `file.scripts.list` — List Scripts
+- `file.setProxy` — File... — *Cmd+Alt+P*
+- `file.setProxyNone` — None
+- `file.timelineFormats` — Timeline Interchange Formats
+- `file.uninstallScript` — Uninstall Script
+- `file.useProxy` — Use Proxy
+- `file.watchFolder` — Watch Folder...
+- `file.watchFolder.poll` — Poll Watch Folder
+
+## render (4)
+
+- `render.addOutputModule` — Add Output Module
+- `render.backend` — Video Rendering and Effects
+- `render.preRender` — Pre-render...
+- `render.saveCurrentPreview` — Save Current Preview...
+
+## roto (14)
+
+- `roto.cancel` — Stop Roto Brush
+- `roto.clearStrokes` — Remove Roto Brush Strokes
+- `roto.freeze` — Freeze
+- `roto.model.download` — Download Roto Brush Model
+- `roto.model.install` — Install Roto Brush Model
+- `roto.model.remove` — Remove Roto Brush Model
+- `roto.model.select` — Use Roto Brush Model
+- `roto.models` — Roto Brush Models
+- `roto.options` — Roto Brush Options
+- `roto.propagate` — Propagate Roto Brush
+- `roto.span` — Set Segmentation Span
+- `roto.status` — Roto Brush Status
+- `roto.stroke` — Roto Brush Stroke
+- `roto.unfreeze` — Unfreeze
+
+## face (5)
+
+- `face.model.download` — Download Face Tracking Model
+- `face.model.install` — Install Face Tracking Model
+- `face.model.remove` — Remove Face Tracking Model
+- `face.model.select` — Use Face Tracking Model
+- `face.models` — Face Tracking Models
+
+## edit (27)
+
+- `edit.clear` — Clear — *Delete*
+- `edit.copy` — Copy — *Cmd+C*
+- `edit.copyExpressionOnly` — Copy Expression Only
+- `edit.copyWithPropertyLinks` — Copy with Property Links — *Cmd+Alt+C*
+- `edit.copyWithRelativePropertyLinks` — Copy with Relative Property Links
+- `edit.cut` — Cut — *Cmd+X*
+- `edit.deselectAll` — Deselect All — *Cmd+Shift+A*
+- `edit.duplicate` — Duplicate — *Cmd+D*
+- `edit.editOriginal` — Edit Original... — *Cmd+E*
+- `edit.extractWorkArea` — Extract Work Area
+- `edit.history` — History
+- `edit.history.goto` — Go to History State
+- `edit.history.list` — History
+- `edit.label` — Label
+- `edit.liftWorkArea` — Lift Work Area
+- `edit.paste` — Paste — *Cmd+V*
+- `edit.pasteReversedKeyframes` — Paste Reversed Keyframes — *Cmd+Shift+V*
+- `edit.pasteSvg` — Paste SVG as Shapes
+- `edit.pasteTextFormattingOnly` — Paste Text Formatting Only
+- `edit.pasteTextMatchFormatting` — Paste Text and Match Formatting
+- `edit.purge` — Purge
+- `edit.purgeUndo` — Undo
+- `edit.redo` — Redo — *Cmd+Shift+Z*
+- `edit.selectAll` — Select All — *Cmd+A*
+- `edit.selectLabelGroup` — Select Label Group
+- `edit.splitLayer` — Split Layer — *Cmd+Shift+D*
+- `edit.undo` — Undo — *Cmd+Z*
+
+## cache (1)
+
+- `cache.diskStats` — Disk Cache Statistics
+
+## comp (31)
+
+- `comp.activateRecent` — Activate Most Recent Composition in Hierarchy — *Shift+Escape*
+- `comp.addMarker` — Add Marker — *Num**
+- `comp.close` — Close Composition
+- `comp.copyFrame` — Copy Frame to Clipboard
+- `comp.cropToLayerBounds` — Crop Comp to Selected Layer(s) Bounds
+- `comp.cropToRegionOfInterest` — Crop Comp to Region of Interest
+- `comp.deletePreset` — Delete Composition Preset
+- `comp.flowchart` — Composition Flowchart — *Cmd+Shift+F11*
+- `comp.info` — Composition Info
+- `comp.miniFlowchart` — Composition Mini-Flowchart — *Tab*
+- `comp.new` — New Composition... — *Cmd+N*
+- `comp.open` — Open Composition
+- `comp.openInEssentialGraphics` — Open in Essential Graphics
+- `comp.presets` — Composition Presets
+- `comp.renderer` — Renderer
+- `comp.responsiveTime` — Responsive Design — Time
+- `comp.revealInProject` — Reveal Composition in Project
+- `comp.saveFrameAs` — File... — *Cmd+Alt+S*
+- `comp.saveFrameAsExr` — ProEXR...
+- `comp.saveFrameAsPsd` — Photoshop Layers...
+- `comp.savePreset` — Save Composition Preset
+- `comp.setPosterTime` — Set Poster Time
+- `comp.setSwitch` — Composition Switch
+- `comp.settings` — Composition Settings... — *Cmd+K*
+- `comp.trimToWorkArea` — Trim Comp to Work Area — *Cmd+Shift+X*
+- `comp.vr.createEnvironment` — Create VR Environment...
+- `comp.vr.environments` — VR Environments
+- `comp.vr.extractCubemap` — Extract Cubemap...
+- `comp.vr.setView` — VR View Orientation
+- `comp.workArea` — Set Work Area
+- `comp.workAreaToSelection` — Set Work Area to Selected Layers — *Cmd+Alt+B*
+
+## layer (121)
+
+- `layer.addItem` — Add Footage to Comp — *Cmd+/*
+- `layer.addMarker` — Add Marker
+- `layer.addMask` — New Mask — *Cmd+Shift+N*
+- `layer.addShapeItem` — Add (Shape)
+- `layer.addTextAnimator` — Animate Text
+- `layer.addTextAnimatorProperty` — Add Property
+- `layer.addTextSelector` — Add Text Selector
+- `layer.align` — Align Layers
+- `layer.alignVideoToData` — Align Video to Data
+- `layer.applyTextPreset` — Apply Text Animation Preset
+- `layer.arrange` — Arrange
+- `layer.autoOrient` — Auto-Orient... — *Cmd+Alt+O*
+- `layer.autoTrace` — Auto-trace...
+- `layer.cameraSettings` — Camera Settings...
+- `layer.castsShadows` — Casts Shadows — *Alt+Shift+C*
+- `layer.centerAnchor` — Center Anchor Point in Layer Content — *Cmd+Alt+Home*
+- `layer.channels` — Layer Channels
+- `layer.create` — Create
+- `layer.deleteAllMarkers` — Delete All Markers
+- `layer.distribute` — Distribute Layers
+- `layer.enablePerChar3D` — Enable Per-character 3D
+- `layer.enableTimeRemap` — Enable Time Remapping — *Cmd+Alt+T*
+- `layer.environment` — Environment Layer
+- `layer.expressions` — Enable/Disable Expressions
+- `layer.extendSelectionNext` — Extend Selection to Next Layer — *Cmd+Shift+ArrowDown*
+- `layer.extendSelectionPrevious` — Extend Selection to Previous Layer — *Cmd+Shift+ArrowUp*
+- `layer.frameBlending` — Frame Blending
+- `layer.freezeFrame` — Freeze Frame
+- `layer.freezeOnLastFrame` — Freeze On Last Frame
+- `layer.hideOtherVideo` — Hide Other Video — *Cmd+Alt+Shift+V*
+- `layer.lightSettings` — Light Settings...
+- `layer.markersLock` — Lock Markers
+- `layer.mask.featherFalloff` — Feather Falloff
+- `layer.mask.hideLocked` — Hide Locked Masks
+- `layer.mask.invert` — Inverted — *Cmd+Shift+I*
+- `layer.mask.lock` — Locked
+- `layer.mask.lockOthers` — Lock Other Masks
+- `layer.mask.mode` — Mask Mode
+- `layer.mask.motionBlur` — Motion Blur
+- `layer.mask.remove` — Remove Mask
+- `layer.mask.removeAll` — Remove All Masks
+- `layer.mask.reset` — Reset Mask
+- `layer.mask.selectNext` — Select Next Mask — *Alt+`*
+- `layer.mask.selectPrevious` — Select Previous Mask — *Alt+Shift+`*
+- `layer.mask.set` — Mask Settings
+- `layer.mask.shape` — Mask Shape... — *Cmd+Shift+M*
+- `layer.mask.unlockAll` — Unlock All Masks
+- `layer.moveEarlier` — Move Layers 1 Frame Earlier — *Alt+PageUp*
+- `layer.moveEarlier10` — Move Layers 10 Frames Earlier — *Alt+Shift+PageUp*
+- `layer.moveInToStart` — Move Layer In Point to Beginning of Comp — *Alt+Home*
+- `layer.moveLater` — Move Layers 1 Frame Later — *Alt+PageDown*
+- `layer.moveLater10` — Move Layers 10 Frames Later — *Alt+Shift+PageDown*
+- `layer.moveOutToEnd` — Move Layer Out Point to End of Comp — *Alt+End*
+- `layer.new3dPrimitive` — 3D Primitive
+- `layer.newAdjustment` — Adjustment Layer — *Cmd+Alt+Y*
+- `layer.newCamera` — Camera... — *Cmd+Alt+Shift+C*
+- `layer.newContentAwareFill` — Content-Aware Fill Layer...
+- `layer.newLight` — Light... — *Cmd+Alt+Shift+L*
+- `layer.newModel` — 3D Model Layer
+- `layer.newNull` — Null Object — *Cmd+Alt+Shift+Y*
+- `layer.newPrimitive` — New 3D Primitive
+- `layer.newShape` — Shape Layer
+- `layer.newSolid` — Solid... — *Cmd+Y*
+- `layer.newText` — Text — *Cmd+Alt+Shift+T*
+- `layer.nudge` — Nudge Layers
+- `layer.openLayer` — Open Layer
+- `layer.openSource` — Open Layer Source
+- `layer.precompose` — Pre-compose... — *Cmd+Shift+C*
+- `layer.quality` — Quality
+- `layer.quickOffset` — Quick Offset
+- `layer.rename` — Rename — *Enter*
+- `layer.revealExpressionErrors` — Reveal Expression Errors
+- `layer.revealInFinder` — Reveal in Finder
+- `layer.revealSource` — Reveal Layer Source in Project
+- `layer.sampling` — Sampling
+- `layer.sceneEditDetection` — Scene Edit Detection...
+- `layer.select` — Select Layers
+- `layer.selectNext` — Select Next Layer — *Cmd+ArrowDown*
+- `layer.selectPrevious` — Select Previous Layer — *Cmd+ArrowUp*
+- `layer.sequence` — Sequence Layers...
+- `layer.setBlendMode` — Blending Mode
+- `layer.setComment` — Layer Comment
+- `layer.setMask` — Mask Mode
+- `layer.setParent` — Parent
+- `layer.setSwitch` — Layer Switch
+- `layer.setText` — Edit Text
+- `layer.setTrackMatte` — Track Matte
+- `layer.setTransform` — Transform Value
+- `layer.settings` — Layer Settings... — *Cmd+Shift+Y*
+- `layer.showAllVideo` — Show All Video
+- `layer.slip` — Slip Edit
+- `layer.slipBack` — Slip Edit 1 Frame Earlier
+- `layer.slipForward` — Slip Edit 1 Frame Later
+- `layer.stretchInToTime` — Stretch Layer In Point to Current Time — *Cmd+Shift+,*
+- `layer.stretchOutToTime` — Stretch Layer Out Point to Current Time — *Cmd+Alt+,*
+- `layer.style.add` — Add Layer Style
+- `layer.style.bevelEmboss` — Bevel and Emboss
+- `layer.style.colorOverlay` — Color Overlay
+- `layer.style.convertToEditable` — Convert to Editable Styles
+- `layer.style.dropShadow` — Drop Shadow
+- `layer.style.globalLight` — Global Light
+- `layer.style.gradientOverlay` — Gradient Overlay
+- `layer.style.innerGlow` — Inner Glow
+- `layer.style.innerShadow` — Inner Shadow
+- `layer.style.list` — List Layer Styles
+- `layer.style.options` — Layer Style Options...
+- `layer.style.outerGlow` — Outer Glow
+- `layer.style.remove` — Remove Layer Style
+- `layer.style.removeAll` — Remove All
+- `layer.style.satin` — Satin
+- `layer.style.showAll` — Show All
+- `layer.style.stroke` — Stroke
+- `layer.style.toggle` — Toggle Layer Style
+- `layer.timeReverse` — Time-Reverse Layer — *Cmd+Alt+R*
+- `layer.timeStretch` — Time Stretch...
+- `layer.timing` — Layer Timing
+- `layer.trackMatte` — Track Matte
+- `layer.transform` — Transform
+- `layer.tree` — Layer Property Tree
+- `layer.unlockAll` — Unlock All Layers — *Cmd+Shift+L*
+- `layer.updateMarkersFromSource` — Update Markers From Source
+
+## view (78)
+
+- `view.3d.activeCamera` — Active Camera — *F12*
+- `view.3d.back` — Back
+- `view.3d.bottom` — Bottom
+- `view.3d.custom1` — Custom View 1 — *F11*
+- `view.3d.custom2` — Custom View 2
+- `view.3d.custom3` — Custom View 3
+- `view.3d.default` — Default
+- `view.3d.front` — Front — *F10*
+- `view.3d.last` — Switch to Last 3D View
+- `view.3d.left` — Left
+- `view.3d.right` — Right
+- `view.3d.top` — Top
+- `view.addGuide` — Add Guide...
+- `view.addPercentGuide` — Add Percentage Guide...
+- `view.assign3dShortcut` — Assign Shortcut to 3D View
+- `view.channel` — Show Channel
+- `view.channel.alpha` — Show Channel: Alpha — *Alt+4*
+- `view.channel.blue` — Show Channel: Blue — *Alt+3*
+- `view.channel.blueColorized` — Show Channel: Blue, Colorized — *Alt+Shift+3*
+- `view.channel.green` — Show Channel: Green — *Alt+2*
+- `view.channel.greenColorized` — Show Channel: Green, Colorized — *Alt+Shift+2*
+- `view.channel.red` — Show Channel: Red — *Alt+1*
+- `view.channel.redColorized` — Show Channel: Red, Colorized — *Alt+Shift+1*
+- `view.channel.rgbStraight` — Show Channel: RGB Straight — *Alt+Shift+4*
+- `view.clearGuides` — Clear Guides
+- `view.closeLockedViewer` — Close Locked Viewer
+- `view.convertGuides` — Convert Guides to Percentage
+- `view.customRgb` — My Custom RGB...
+- `view.displayColor` — Viewer Color State
+- `view.displayColorManagement` — Use Display Color Management
+- `view.exportGuides` — Export Guides...
+- `view.exposure` — Adjust Exposure
+- `view.extendedViewer` — Extended Viewer
+- `view.fastPreviewMode` — Fast Previews
+- `view.fastPreviews.adaptive` — Fast Previews: Adaptive Resolution — *Cmd+Alt+2*
+- `view.fastPreviews.draft` — Fast Previews: Draft — *Cmd+Alt+3*
+- `view.fastPreviews.fastDraft` — Fast Previews: Fast Draft — *Cmd+Alt+4*
+- `view.fastPreviews.off` — Fast Previews: Off (Final Quality) — *Cmd+Alt+1*
+- `view.fastPreviews.wireframe` — Fast Previews: Wireframe — *Cmd+Alt+5*
+- `view.fullScreen` — Enter Full Screen
+- `view.get3D` — 3D View State
+- `view.grid` — Show Grid — *Cmd+'*
+- `view.guides` — Show Guides — *Cmd+;*
+- `view.importGuides` — Import Guides...
+- `view.layerControls` — Show Layer Controls — *Cmd+Shift+H*
+- `view.layout` — Switch View Layout
+- `view.lockGuides` — Lock Guides — *Cmd+Alt+Shift+;*
+- `view.lookAtAll` — Look at All Layers
+- `view.lookAtSelected` — Look at Selected Layers — *Cmd+Alt+Shift+\*
+- `view.moveGuide` — Move Guide
+- `view.newViewer` — New Viewer — *Alt+Shift+N*
+- `view.options` — View Options... — *Cmd+Alt+U*
+- `view.panelBackground` — Panel Background Color
+- `view.removeGuide` — Remove Guide
+- `view.res.auto` — Resolution: Auto
+- `view.res.custom` — Custom... — *Cmd+Alt+J*
+- `view.res.full` — Full — *Cmd+J*
+- `view.res.half` — Half — *Cmd+Shift+J*
+- `view.res.quarter` — Quarter — *Cmd+Alt+Shift+J*
+- `view.res.third` — Third
+- `view.reset3DView` — Reset 3D View
+- `view.resetExposure` — Reset Exposure
+- `view.rulers` — Show Rulers — *Cmd+R*
+- `view.set3DView` — Switch 3D View
+- `view.set3DViewCamera` — Set 3D View Camera
+- `view.setPaneView` — Set View of Pane
+- `view.setRegionOfInterest` — Region of Interest
+- `view.shareViewOptions` — Share View Options
+- `view.showSnapshot` — Show Snapshot
+- `view.simulateOutput` — Simulate Output
+- `view.snapToGrid` — Snap to Grid — *Cmd+Shift+'*
+- `view.snapToGuides` — Snap to Guides — *Cmd+Shift+;*
+- `view.snapping` — Snapping
+- `view.snappingOptions` — Snapping Options
+- `view.splitLockedViewer` — Split with New Locked Viewer
+- `view.takeSnapshot` — Take Snapshot — *Shift+F5*
+- `view.zoomIn` — Zoom In — *.*
+- `view.zoomOut` — Zoom Out — *,*
+
+## camera (19)
+
+- `camera.analyze` — Analyze
+- `camera.cancel` — Cancel
+- `camera.create` — Create Camera
+- `camera.createFromSolve` — Create from Camera Solve
+- `camera.deletePoints` — Delete Selected Points
+- `camera.dolly` — Dolly Camera
+- `camera.fromModel` — Create Cameras from 3D Model
+- `camera.fromView` — Create Camera from 3D View
+- `camera.linkFocusToLayer` — Link Focus Distance to Layer
+- `camera.linkFocusToPoi` — Link Focus Distance to Point of Interest
+- `camera.orbit` — Orbit Camera
+- `camera.orbitNull` — Create Orbit Null
+- `camera.pan` — Pan Camera
+- `camera.points` — 3D Camera Tracker Points
+- `camera.selectPoints` — Select Track Points
+- `camera.setFocusToLayer` — Set Focus Distance to Layer
+- `camera.setGroundPlane` — Set Ground Plane and Origin
+- `camera.solveStatus` — 3D Camera Tracker Status
+- `camera.stereoRig` — Create Stereo 3D Rig
+
+## material (4)
+
+- `material.duplicateAssign` — Duplicate and Assign Material
+- `material.reset` — Reset Material
+- `material.revealSource` — Reveal Material Source in Project
+- `material.set` — Material Options
+
+## light (3)
+
+- `light.controlWithCamera` — Control Light with Camera
+- `light.environmentBackground` — Create Environment Light Background Layer
+- `light.fromModel` — Create Lights from 3D Model
+
+## text (13)
+
+- `text.addSelector` — Add Text Selector
+- `text.animatorFontAxes` — Variable Font Axes
+- `text.animatorProperties` — Text Animator Properties
+- `text.delete` — Delete Text
+- `text.edit` — Edit Text
+- `text.endEdit` — Exit Text Editing
+- `text.fontFeatures` — OpenType Features
+- `text.fonts` — List Fonts
+- `text.insert` — Type Text
+- `text.moveCaret` — Move Text Caret
+- `text.presets` — Text Animation Presets
+- `text.removeAllAnimators` — Remove All Text Animators
+- `text.setSelection` — Set Text Selection
+
+## prop (18)
+
+- `prop.addKey` — Add Keyframe
+- `prop.convertExpressionToKeyframes` — Convert Expression to Keyframes
+- `prop.deselect` — Deselect Property
+- `prop.duplicateGroup` — Duplicate Property Group
+- `prop.editGradient` — Edit Gradient...
+- `prop.get` — Get Property
+- `prop.moveGroup` — Reorder Property Group
+- `prop.pickWhip` — Pick Whip (Link Property)
+- `prop.removeGroup` — Delete Property Group
+- `prop.renameGroup` — Rename Property Group
+- `prop.reset` — Reset Property
+- `prop.select` — Select Property
+- `prop.separateDimensions` — Separate Dimensions
+- `prop.set` — Set Property Value
+- `prop.setExpression` — Add Expression — *Alt+Shift+=*
+- `prop.setGroupEnabled` — Enable Property Group
+- `prop.toggleAnimation` — Toggle Stopwatch
+- `prop.toggleKey` — Add or Remove Keyframe at Current Time
+
+## keys (36)
+
+- `keys.audioToKeyframes` — Convert Audio to Keyframes
+- `keys.copy` — Copy Keyframes
+- `keys.delete` — Delete Keyframes
+- `keys.deselectAll` — Deselect All Keyframes and Properties — *Shift+F2*
+- `keys.easyEase` — Easy Ease — *F9*
+- `keys.easyEaseIn` — Easy Ease In — *Shift+F9*
+- `keys.easyEaseOut` — Easy Ease Out — *Cmd+Shift+F9*
+- `keys.exponentialScale` — Exponential Scale
+- `keys.info` — Keyframe Info
+- `keys.interpolation` — Keyframe Interpolation... — *Cmd+Alt+K*
+- `keys.move` — Move Keyframes
+- `keys.nudge` — Nudge Keyframes
+- `keys.nudgeBackward` — Move Keyframes 1 Frame Earlier — *Alt+ArrowLeft*
+- `keys.nudgeBackward10` — Move Keyframes 10 Frames Earlier — *Alt+Shift+ArrowLeft*
+- `keys.nudgeForward` — Move Keyframes 1 Frame Later — *Alt+ArrowRight*
+- `keys.nudgeForward10` — Move Keyframes 10 Frames Later — *Alt+Shift+ArrowRight*
+- `keys.paste` — Paste Keyframes
+- `keys.quickOffset` — Quick Offset Keyframes
+- `keys.rpfCameraImport` — RPF Camera Import
+- `keys.select` — Select Keyframes
+- `keys.selectAll` — Select All Keyframes — *Cmd+Alt+A*
+- `keys.selectEqual` — Select Equal Keyframes
+- `keys.selectFollowing` — Select Following Keyframes
+- `keys.selectLabelGroup` — Select Keyframe Label Group
+- `keys.selectPrevious` — Select Previous Keyframes
+- `keys.set` — Edit Keyframe
+- `keys.setEase` — Set Keyframe Ease
+- `keys.setLabel` — Keyframe Label
+- `keys.setSpatialTangents` — Edit Spatial Tangents
+- `keys.smooth` — Smoother
+- `keys.timeReverse` — Time-Reverse Keyframes
+- `keys.toggleHold` — Toggle Hold Keyframe — *Cmd+Alt+H*
+- `keys.toggleTransform` — Add or Remove Transform Keyframe
+- `keys.transform` — Transform Keyframes
+- `keys.velocity` — Keyframe Velocity... — *Cmd+Shift+K*
+- `keys.wiggle` — Wiggler
+
+## project (13)
+
+- `project.delete` — Delete Project Items
+- `project.deleteWithoutConfirmation` — Delete Project Items Without Confirmation — *Shift+Delete*
+- `project.duplicate` — Duplicate Project Items
+- `project.move` — Move to Folder
+- `project.newFolder` — New Folder — *Cmd+Alt+Shift+N*
+- `project.rename` — Rename Item
+- `project.select` — Select Project Items
+- `project.setComment` — Item Comment
+- `project.setLabel` — Item Label
+- `project.setProjectComment` — Project Comment
+- `project.summary` — Project Summary
+- `project.usage` — Project Item Usage
+- `project.usedIn` — Project Item Used In
+
+## motion (1)
+
+- `motion.sketch` — Motion Sketch
+
+## markers (5)
+
+- `markers.convert` — Convert Marker
+- `markers.delete` — Delete Marker
+- `markers.list` — List Markers
+- `markers.nested` — Nested Comp Markers
+- `markers.set` — Marker Settings
+
+## mask (17)
+
+- `mask.addVertex` — Add Mask Vertex
+- `mask.convertVertex` — Convert Vertex
+- `mask.deleteVertices` — Delete Mask Vertices
+- `mask.featherPoint.add` — Add Mask Feather Point
+- `mask.featherPoint.list` — Mask Feather Points
+- `mask.featherPoint.remove` — Delete Mask Feather Point
+- `mask.featherPoint.set` — Move Mask Feather Point
+- `mask.insertVertex` — Add Vertex
+- `mask.interpolate` — Apply Mask Interpolation
+- `mask.interpolationOptions` — Mask Interpolation Options
+- `mask.moveVertices` — Move Mask Vertices
+- `mask.new` — New Mask from Points
+- `mask.remove` — Remove Mask
+- `mask.removeAll` — Remove All Masks
+- `mask.selectVertices` — Select Mask Vertices
+- `mask.setClosed` — Closed
+- `mask.setVertex` — Set Mask Vertex
+
+## path (6)
+
+- `path.convertToBezier` — Convert To Bezier Path
+- `path.freeTransform` — Free Transform Points
+- `path.groupShapes` — Group Shapes — *Cmd+G*
+- `path.rotoBezier` — RotoBezier
+- `path.setFirstVertex` — Set First Vertex
+- `path.ungroupShapes` — Ungroup Shapes — *Cmd+Shift+G*
+
+## effect (19)
+
+- `effect.apply` — Apply Effect
+- `effect.applyLast` — Last Effect — *Cmd+Alt+Shift+E*
+- `effect.copy` — Copy Effects
+- `effect.duplicate` — Duplicate Effect
+- `effect.editDropdown` — Edit Dropdown Menu
+- `effect.list` — List Effects
+- `effect.manage` — Manage Effects...
+- `effect.paste` — Paste Effects
+- `effect.pickColor` — Pick Effect Colour
+- `effect.plugins.list` — List Effect Plug-ins
+- `effect.plugins.load` — Load Effect Plug-in...
+- `effect.remove` — Remove Effect
+- `effect.removeAll` — Remove All — *Cmd+Shift+E*
+- `effect.reorder` — Reorder Effect
+- `effect.reset` — Reset Effect
+- `effect.setLabel` — Effect Label
+- `effect.swapTintColors` — Swap Tint Colors
+- `effect.toggle` — Toggle Effect
+- `effect.warning` — Effect Warning
+
+## time (17)
+
+- `time.back10` — Back 10 Frames — *Shift+PageUp*
+- `time.end` — Go to End — *End*
+- `time.forward10` — Forward 10 Frames — *Shift+PageDown*
+- `time.go` — Go To
+- `time.layerIn` — Go to Layer In Point — *I*
+- `time.layerOut` — Go to Layer Out Point — *O*
+- `time.nextFrame` — Next Frame — *PageDown*
+- `time.nextInOut` — Go to Next In or Out Point — *Cmd+Alt+Shift+ArrowRight*
+- `time.nextKey` — Go to Next Keyframe or Marker — *K*
+- `time.previousFrame` — Previous Frame — *PageUp*
+- `time.previousInOut` — Go to Previous In or Out Point — *Cmd+Alt+Shift+ArrowLeft*
+- `time.previousKey` — Go to Previous Keyframe or Marker — *J*
+- `time.set` — Go to Time... — *Alt+Shift+J*
+- `time.start` — Go to Start — *Home*
+- `time.step` — Step Frames
+- `time.workAreaEnd` — Go to Work Area End — *Shift+End*
+- `time.workAreaStart` — Go to Work Area Start — *Shift+Home*
+
+## renderQueue (20)
+
+- `renderQueue.add` — Add to Render Queue — *Cmd+M*
+- `renderQueue.applyTemplate` — Apply Template
+- `renderQueue.deleteTemplate` — Delete Template
+- `renderQueue.duplicate` — Duplicate Render Item
+- `renderQueue.formats` — Output Formats
+- `renderQueue.list` — Render Queue Items
+- `renderQueue.move` — Move in Render Queue
+- `renderQueue.remove` — Remove from Render Queue
+- `renderQueue.render` — Render
+- `renderQueue.saveTemplate` — Save Template...
+- `renderQueue.setLog` — Render Queue: Log
+- `renderQueue.setNotify` — Notify When Done
+- `renderQueue.setOutput` — Output To...
+- `renderQueue.setOutputModule` — Output Module Settings...
+- `renderQueue.setOverflowFolders` — Storage Overflow Folders
+- `renderQueue.setRender` — Render Queue: Render Checkbox
+- `renderQueue.setRenderSettings` — Render Settings...
+- `renderQueue.setTemplateDefault` — Set Template Default
+- `renderQueue.stop` — Stop Rendering
+- `renderQueue.templates` — Render Templates
+
+## help (13)
+
+- `help.appPage` — EffectCraft Home Page
+- `help.discord` — Join the ArtCraft Discord...
+- `help.docs` — EffectCraft Help... — *F1*
+- `help.enableLogging` — Enable Logging
+- `help.github` — EffectCraft on GitHub
+- `help.inAppTutorials` — In-App Tutorials...
+- `help.onlineTutorials` — Online Tutorials...
+- `help.reportIssue` — Provide Feedback...
+- `help.revealLogFile` — Reveal Logging File
+- `help.sibling` — Other ArtCraft Apps
+- `help.systemInfo` — System Information
+- `help.systemReport` — System Compatibility Report...
+- `help.website` — ArtCraft Website
+
+## command (2)
+
+- `command.describe` — Describe Command
+- `command.list` — List Commands
+
+## app (12)
+
+- `app.about` — About EffectCraft...
+- `app.capabilities` — App Capabilities
+- `app.commandPalette` — Quick Apply... — *Cmd+Shift+Space*
+- `app.find` — Find — *Cmd+F*
+- `app.gpuInfo` — GPU Information...
+- `app.hide` — Hide EffectCraft
+- `app.hideOthers` — Hide Others
+- `app.keyboardShortcuts` — Keyboard Shortcuts — *Cmd+Alt+'*
+- `app.quit` — Quit EffectCraft — *Cmd+Q*
+- `app.settings` — Settings...
+- `app.showAll` — Show All
+- `app.templates` — Templates
+
+## editor (1)
+
+- `editor.state` — Editor State
+
+## engine (1)
+
+- `engine.batch` — Run Commands (Batch)
+
+## anim (9)
+
+- `anim.addKeyframe` — Add Keyframe
+- `anim.applyBuiltinPreset` — Apply Built-in Animation Preset
+- `anim.applyPreset` — Apply Animation Preset...
+- `anim.applyRecentPreset` — Recent Animation Presets — *Cmd+Alt+Shift+F*
+- `anim.browsePresets` — Browse Presets...
+- `anim.builtinPresets` — Built-in Animation Presets
+- `anim.clearRecentPresets` — Clear Recent Presets
+- `anim.reveal` — Reveal Properties
+- `anim.savePreset` — Save Animation Preset...
+
+## shape (8)
+
+- `shape.dashes.add` — Add Dash or Gap
+- `shape.dashes.remove` — Remove Dash or Gap
+- `shape.fillStroke` — Fill and Stroke
+- `shape.newPath` — Pen Tool (Shape Path)
+- `shape.newShape` — Shape Tool
+- `shape.stroke.taper` — Stroke Taper
+- `shape.stroke.wave` — Stroke Wave
+- `shape.toolOptions` — Shape Tool Options
+
+## footage (12)
+
+- `footage.check` — Check Footage
+- `footage.clearInOut` — Clear In and Out
+- `footage.info` — Footage Panel State
+- `footage.missing` — Missing Footage
+- `footage.open` — Open in Footage Panel
+- `footage.overlayEdit` — Overlay Edit
+- `footage.relink` — Relink Footage
+- `footage.reloadChanged` — Reload Changed Footage
+- `footage.rippleInsertEdit` — Ripple Insert Edit
+- `footage.setIn` — Set In Point
+- `footage.setOut` — Set Out Point
+- `footage.setTime` — Footage Panel Time
+
+## script (4)
+
+- `script.run` — Run Script
+- `script.runTasks` — Run Scheduled Script Tasks
+- `script.settings.get` — Get Script Setting
+- `script.settings.save` — Save Script Setting
+
+## paths (3)
+
+- `paths.nullsFollowPoints` — Nulls Follow Points
+- `paths.pointsFollowNulls` — Points Follow Nulls
+- `paths.tracePath` — Trace Path
+
+## effects (1)
+
+- `effects.copyPresetsFolderPath` — Copy Presets Folder Path
+
+## playback (6)
+
+- `playback.audio` — Audio
+- `playback.cacheWhenIdle` — Cache Frames When Idle
+- `playback.scrubAudio` — Scrub Audio
+- `playback.settings.get` — Preview Settings
+- `playback.settings.set` — Change Preview Settings
+- `playback.toggle` — Play Current Preview — *Space*
+
+## window (9)
+
+- `window.assignWorkspaceShortcut` — Assign Shortcut to Workspace
+- `window.editWorkspaces` — Edit Workspaces...
+- `window.panel` — Show Panel
+- `window.resetWorkspace` — Reset to Saved Layout
+- `window.restoreScriptPanels` — Restore ScriptUI Panels
+- `window.saveWorkspace` — Save Changes to this Workspace
+- `window.saveWorkspaceAs` — Save as New Workspace...
+- `window.scriptPanel` — ScriptUI Panel
+- `window.workspace` — Workspace
+
+## track (22)
+
+- `track.analyze` — Analyze
+- `track.apply` — Apply
+- `track.camera` — Track Camera
+- `track.delete` — Delete Tracker
+- `track.editTargetDialog` — Edit Target...
+- `track.extractFaceMeasurements` — Extract & Copy Face Measurements
+- `track.mask` — Track Mask
+- `track.maskMethod` — Mask Tracking Method
+- `track.motion` — Track Motion
+- `track.new` — New Tracker
+- `track.options` — Motion Tracker Options
+- `track.optionsDialog` — Options...
+- `track.property` — Track this Property
+- `track.reset` — Reset
+- `track.select` — Current Track
+- `track.setPoint` — Move Track Point
+- `track.setTarget` — Edit Target
+- `track.setType` — Track Type
+- `track.stabilize` — Stabilize Motion
+- `track.status` — Tracker Status
+- `track.stop` — Stop Analysis
+- `track.warpStabilizer` — Warp Stabilizer VFX
+
+## warp (3)
+
+- `warp.analyze` — Analyze
+- `warp.cancel` — Cancel
+- `warp.status` — Warp Stabilizer Status
+
+## objectMatte (5)
+
+- `objectMatte.apply` — Object Matte
+- `objectMatte.freeze` — Freeze Object Matte
+- `objectMatte.propagate` — Track Object Matte
+- `objectMatte.status` — Object Matte Status
+- `objectMatte.unfreeze` — Unfreeze Object Matte
+
+## paint (6)
+
+- `paint.brushPreset` — Brush Preset
+- `paint.options` — Paint Options
+- `paint.presets` — Brush Presets
+- `paint.removeStroke` — Delete Paint Stroke
+- `paint.setCloneSource` — Set Clone Source
+- `paint.stroke` — Paint Stroke
+
+## puppet (10)
+
+- `puppet.addPin` — Add Puppet Pin
+- `puppet.follow` — Follow-Through...
+- `puppet.info` — Puppet Mesh Info
+- `puppet.mesh` — Puppet Mesh Options
+- `puppet.movePin` — Move Puppet Pin
+- `puppet.recordOptions` — Record Options...
+- `puppet.recordPin` — Record Puppet Pin
+- `puppet.removePin` — Delete Puppet Pin
+- `puppet.selectPins` — Select Puppet Pins
+- `puppet.setPin` — Edit Puppet Pin
+
+## liquify (2)
+
+- `liquify.clear` — Clear Liquify Mesh
+- `liquify.stroke` — Liquify Stroke
+
+## prefs (5)
+
+- `prefs.get` — Get Setting
+- `prefs.open` — Open Settings
+- `prefs.pages` — Settings Pages
+- `prefs.reset` — Reset Settings
+- `prefs.set` — Change Setting
+
+## shortcuts (7)
+
+- `shortcuts.conflicts` — Keyboard Shortcut Conflicts
+- `shortcuts.export` — Export Keyboard Shortcuts
+- `shortcuts.import` — Import Keyboard Shortcuts
+- `shortcuts.list` — List Keyboard Shortcuts
+- `shortcuts.preset` — Keyboard Shortcut Preset
+- `shortcuts.reset` — Reset Keyboard Shortcuts
+- `shortcuts.set` — Set Keyboard Shortcut
+
+## essential (22)
+
+- `essential.addComment` — Add Comment
+- `essential.addGroup` — Add Group
+- `essential.addMedia` — Add Media Replacement
+- `essential.addMirror` — Add Mirror
+- `essential.addProperty` — Add Property to Essential Graphics
+- `essential.canAdd` — Can Add Property to Essential Graphics
+- `essential.exportTemplate` — Essential Graphics Template...
+- `essential.importTemplate` — Essential Graphics Template...
+- `essential.instance` — Essential Properties of a precomp layer
+- `essential.linkProperty` — Link Property to Control
+- `essential.list` — Essential Graphics controls
+- `essential.move` — Move Control
+- `essential.pushToComp` — Push Override Values to Source
+- `essential.remove` — Remove Control
+- `essential.rename` — Rename Control
+- `essential.revert` — Revert
+- `essential.set` — Set Essential Property
+- `essential.setName` — Essential Graphics Name
+- `essential.setPrimary` — Primary Composition
+- `essential.soloSupported` — Solo Supported Properties
+- `essential.templateInfo` — Read a template's manifest
+- `essential.unlinkProperty` — Unlink Property
+
+## expr (2)
+
+- `expr.errors` — Expression errors (the error bar)
+- `expr.languageMenu` — Expression Language menu
+
+## scriptui (6)
+
+- `scriptui.click` — Click Script Window Control
+- `scriptui.close` — Close Script Window
+- `scriptui.get` — Script Window Controls
+- `scriptui.list` — List Script Windows
+- `scriptui.mouse` — Mouse Event on Script Window Control
+- `scriptui.set` — Set Script Window Control
+
+## jobs (3)
+
+- `jobs.cancel` — Cancel Job
+- `jobs.list` — Background Jobs
+- `jobs.wait` — Wait for Background Jobs
+
+## mediaBrowser (7)
+
+- `mediaBrowser.action` — Media Browser Action
+- `mediaBrowser.addFavorite` — Add to Favorites
+- `mediaBrowser.fileInfo` — File Info
+- `mediaBrowser.go` — Go to Folder
+- `mediaBrowser.import` — Import
+- `mediaBrowser.list` — List Folder
+- `mediaBrowser.removeFavorite` — Remove from Favorites
+
+## item (1)
+
+- `item.metadata` — Metadata
+
+## scopes (1)
+
+- `scopes.analyze` — Lumetri Scopes
+
+## contentFill (2)
+
+- `contentFill.generate` — Generate Fill Layer
+- `contentFill.set` — Content-Aware Fill Settings
+
+## storage (3)
+
+- `storage.clear` — Clear Browser Storage
+- `storage.info` — Browser Storage
+- `storage.persist` — Request Persistent Storage
+
+## learn (5)
+
+- `learn.list` — Learn Tutorials
+- `learn.start` — Start Tutorial
+- `learn.state` — Tutorial State
+- `learn.step` — Tutorial Step
+- `learn.stop` — Close Tutorial
+
+## templates (5)
+
+- `templates.create` — New Project from Template
+- `templates.delete` — Delete Template
+- `templates.list` — Project Templates
+- `templates.saveAs` — Save as Template...
+- `templates.thumbnail` — Template Thumbnail
